@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 const Navbar = () => {
   return (
     <nav className='bg-slate-800 text-white '>
@@ -11,7 +12,7 @@ const Navbar = () => {
             </div>
     
             <button className=" flex  items-center gap-2 bg-green-700 rounded-full px-3 py-1 hover:bg-green-600">
-                <img className="invert" src="public/github.png" alt="" />
+                <img className="invert" src="src/assets/gthub.png" alt="" />
                 <span>GitHub</span>
             </button>
         </div>

@@ -4,6 +4,8 @@ import 'react-toastify/dist/ReactToastify.css';
 import { v4 as uuidv4 } from 'uuid';
 import '../App.css';
 
+
+
 const Manager = () => {
     const ref = useRef()
     const passwordRef = useRef()
@@ -25,10 +27,10 @@ const Manager = () => {
     const showPassword = () => {
        
     if (ref.current.src.includes("show.png")) {
-        ref.current.src = "public/hide.png";    
+        ref.current.src = "hide.png";    
         passwordRef.current.type = "password";      
     } else {
-        ref.current.src = "public/show.png";     
+        ref.current.src = "show.png";     
         passwordRef.current.type = "text"; 
     }  
 }
@@ -102,7 +104,7 @@ const Manager = () => {
                         <div className="relative w-full ">
                             <input ref={passwordRef} value={form.password} onChange={handleChange} placeholder="Enter Password" title="password" className="border border-green-500 bg-white rounded-md w-full p-4 py-1" type="password" name="password" id="password" />
                             <span className='absolute right-1 top-1 cursor-pointer' onClick={showPassword}>
-                                <img ref={ref} width={20} src="public/hide.png" alt="eye" />
+                                <img ref={ref} width={20} src="hide.png" alt="eye" />
                             </span>
                         </div>
                     </div>
